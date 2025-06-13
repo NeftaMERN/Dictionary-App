@@ -6,16 +6,16 @@ const btn = document.getElementById("serch-btn");
 
 btn.addEventListener("click", () => {
 
-    const ineWord = document.getElementById("ine_Word").Value;
+    const ineWord = document.getElementById("ine_Word").value;
 
-    fuch(`${url}${ineWord}`)
-    .then((response) => response.json)
+    fetch(`${url}${ineWord}`)
+    .then((response) => response.json())
     .then((data => {
 
         console.log(data);
         result.innerHTML = `<div class="word">
 
-                <h3>Sampl</h3>
+                <h3>${ineWord}</h3>
 
                 <button class="sound">
 
