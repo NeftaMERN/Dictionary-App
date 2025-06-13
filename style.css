@@ -12,7 +12,7 @@ body {
 
     font-size: 50px;
     border-radius: 10px;
-    background-color: rgba(240, 248, 255, 0.699);
+    background-color: #fff;
     height: 50vh;
     width: 500px;
 
@@ -33,6 +33,8 @@ input {
     padding: 10px;
     border: none;
     outline: none;
+    border-bottom: 3px solid turquoise;
+    font-size: 16px;
 
 }
 
