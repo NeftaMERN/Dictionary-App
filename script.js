@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
 
                 <h3>${ineWord}</h3>
 
-                <button class="sound">
+                <button class="sound" onclick = "playSound()">
 
                     <i class="fa-solid fa-volume-high"></i>
 
@@ -44,6 +44,25 @@ btn.addEventListener("click", () => {
 
             </p>`
 
+            let audioSrc = data[0].phonetics.find(p => p.audio)?.audio;
+
+            if (audioSrc) {
+            sound.setAttribute("src", audioSrc);
+            } else {
+                sound.setAttribute("src", "");
+                alert("No pronunciation audio found for this word 😢");
+            }
+
     }))
 
+    .catch(() => {
+            result.innerHTML = `<h3 class="error">Could not find the word</h3>`;
+        });
+
 })
+
+function playSound() {
+
+    sound.play();
+
+}
