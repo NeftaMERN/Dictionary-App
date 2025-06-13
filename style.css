@@ -10,11 +10,8 @@ body {
 
 .container {
 
-    font-size: 50px;
     border-radius: 10px;
     background-color: #fff;
-    height: 50vh;
-    width: 500px;
 
 }
 
@@ -23,6 +20,8 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 500px;
+    font-size: 50px;
 
 }
 
@@ -38,7 +37,7 @@ input {
 
 }
 
-button {
+.surch_btn {
 
     height: 30px;
     width: 70px;
@@ -48,4 +47,37 @@ button {
     background: rgb(4, 193, 240);
     border-radius: 5px;
 
+}
+
+.result {
+    width: 500px; 
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.result button {
+    height: 36px;
+    width: 36px;
+    border: none;
+    background: #00d1d1;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
