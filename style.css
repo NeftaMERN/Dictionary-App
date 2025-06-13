@@ -81,3 +81,15 @@ input {
     justify-content: center;
     align-items: center;
 }
+
+.result .details {
+
+    display: flex;
+    gap: 10px;
+    color: #b3b3b3;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+
+}
+
+
