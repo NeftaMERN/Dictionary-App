@@ -27,20 +27,20 @@ btn.addEventListener("click", () => {
 
             <div class="details">
 
-                <p>pos</p>
-                <p>/Sampl/</p>
+                <p>${data[0].meanings[0].partOfSpeech}</p>
+                <p>/${data[0].phonetic}/</p>
 
             </div>
 
             <p class="word-mining">
 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, deleniti. Minus accusantium totam eius ut.
+                ${data[0].meanings[0].definitions[0].definition}
 
             </p>
 
             <p class="word-example">
 
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga labore voluptas itaque voluptate aut! Odit.
+                ${data[0].meanings[0].definitions[0].example || "No example found"}
 
             </p>`
 
